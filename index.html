@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CalC</title>
+<style>
+	body{
+		background: red;
+	}
+</style>
+</head>
+<body>
+<center>
+		<h1>Calculator</h1><br>
+	<input type="number" id="a"></input>
+	<input type="number" id="b"></input></center>
+	<center>
+	<button onclick="add()">add</button>
+	<button onclick="subtract()">subtract</button>
+	<button onclick="multiply()">multiply</button>
+	<button onclick="divide()">divide</button>
+	<button onclick="power()">a power b</button>
+</center>
+	<center><div id="ans"></div></center>
+<script>
+	function add(){
+		var a = parseInt(document.getElementById("a").value);
+		var b = parseInt(document.getElementById("b").value);
+		document.getElementById("ans").innerHTML = a + b;
+		console.log(a);
+	}
+	function subtract(){
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		document.getElementById("ans").innerHTML = a-b;
+		console.log(a);
+	}
+	function multiply(){
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		document.getElementById("ans").innerHTML = a*b;
+		console.log(a);
+	}
+	function divide(){
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		document.getElementById("ans").innerHTML = a/b;
+		console.log(a);
+	}
+	function power(){
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		document.getElementById("ans").innerHTML = Math.pow(a,b);
+		console.log(a);
+	}
+</script>
+</body> 
+</html>  
